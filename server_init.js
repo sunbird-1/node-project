@@ -4,7 +4,7 @@ let app = express()
 
 // Define request response in root URL (/)
 app.get('/', function (req, res) {
-res.send('<center><h1>My Node js application is containerized</h1></center>')
+res.send('<center><h1> Wellcome to My NODE JS application is containerized</h1></center>')
 })
 
 // Launch listening server on port 8081
