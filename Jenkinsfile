@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                git --extra-vars '{"branch":"${params.branch}"}', url: 'https://github.com/rituparna1997/node-project.git'
+                git branch: 'dev', url: 'https://github.com/rituparna1997/node-project.git'
             }
         }
         stage('build') {
