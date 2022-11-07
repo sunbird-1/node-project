@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                git branch: ${params.branch}, url: 'https://github.com/rituparna1997/node-project.git'
+                git branch: ${env.branch}, url: 'https://github.com/rituparna1997/node-project.git'
             }
         }
         stage('build') {
