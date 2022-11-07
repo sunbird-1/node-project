@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'cd /var/lib/jenkins/workspace/build'
+         
                 sh 'sudo docker push rituparna1997/myimg:latest'
                 
             }
