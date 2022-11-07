@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('build') {
+            steps {
+         
+                sh 'sudo docker push rituparna1997/myimg:latest'
+                
+            }
+        }
+    }
+}
