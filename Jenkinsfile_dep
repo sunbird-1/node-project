@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('build') {
+            steps {
+         
+                sh 'sudo docker run -it -d -p 8081:80 rituparna1997/myimg:latest --name "myimg"'
+                
+            }
+        }
+    }
+}
