@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-               
+                sh 'sudo docker stop mycont'
+                sh 'sudo docker rm mycont'
                 sh 'sudo docker run -d -p 80:8081 --name mycont rituparna1997/myimg:latest'
                 
             }
