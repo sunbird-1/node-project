@@ -5,7 +5,7 @@ pipeline {
         stage('build') {
             steps {
          
-                sh 'sudo docker run -p 80:8081 rituparna1997/myimg:latest --name myimg'
+                sh 'sudo docker run -p 80:8081 rituparna1997/myimg:latest'
                 
             }
         }
